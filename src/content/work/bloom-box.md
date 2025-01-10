@@ -1,23 +1,40 @@
 ---
-title: Bloom Box
-publishDate: 2019-12-01 00:00:00
+title: Prédiction des prix de l'immobilier avec l'IA
+publishDate: 2025-01-10 00:00:00
 img: /assets/stock-2.jpg
-img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+img_alt: Image d'une vue d'ensemble d'une ville avec des bâtiments modernes
 description: |
-  We paired with a cutting-edge music API and a team of horticulturalists
-  to build AI-generated playlists that maximize houseplant health.
+  Nous avons combiné des algorithmes de Machine Learning et de Deep Learning pour prédire les prix de l'immobilier en utilisant des données économiques et gouvernementales.
 tags:
-  - Dev
-  - Branding
-  - Backend
+  - Machine Learning
+  - Deep Learning
+  - Data Engineering
+  - Prédiction
+  - Immobilier
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
+## Introduction au projet
 
-Integer vitae nibh elit. Suspendisse eget urna eu neque bibendum pharetra. Sed interdum lectus sem, in pulvinar magna dignissim vel. Quisque maximus at urna nec laoreet. Suspendisse potenti. Vestibulum rhoncus sem ut mi pellentesque, in vestibulum erat blandit. Aliquam sodales dui ac maximus consectetur. Duis quis est vehicula, imperdiet nisl nec, fermentum erat. Duis tortor diam, pharetra eu euismod in, vehicula non eros. Curabitur facilisis dui at erat ultrices gravida. In at nunc ultricies, pulvinar mi vel, sagittis mauris. Praesent pharetra posuere purus ac imperdiet. Nulla facilisi.
+Dans ce projet, nous avons développé un modèle prédictif capable de prédire les prix des propriétés en fonction de divers facteurs, tels que l'emplacement, la taille, les infrastructures environnantes, et des données économiques et gouvernementales.
 
-Sed pulvinar porttitor mi in ultricies. Etiam non dolor gravida eros pulvinar pellentesque et dictum ex. Proin eu ornare ligula, sed condimentum dui. Vivamus tincidunt tellus mi, sed semper ipsum pharetra a. Suspendisse sollicitudin at sapien nec volutpat. Etiam justo urna, laoreet ac lacus sed, ultricies facilisis dolor. Integer posuere, metus vel viverra gravida, risus elit ornare magna, id feugiat erat risus ullamcorper libero. Proin vitae diam auctor, laoreet lorem vitae, varius tellus.
+### Objectif du projet
 
-Mauris sed eros in ex maximus volutpat. Suspendisse potenti. Donec lacinia justo consectetur sagittis tempor. Proin ullamcorper nisi vitae auctor rhoncus. Sed tristique aliquam augue. Pellentesque vitae fringilla ligula. Nulla arcu elit, efficitur eu nunc malesuada, eleifend tincidunt orci. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer mattis orci in bibendum ultricies. Quisque a dui erat. Phasellus et vulputate ipsum. Proin metus ex, lobortis nec ornare eget, bibendum ut sapien. Aliquam in dolor lobortis, aliquam tellus a, congue augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Le but de ce projet est d'utiliser des techniques de **Machine Learning** et de **Deep Learning** pour analyser les tendances du marché immobilier et prédire les prix des biens immobiliers. En ajoutant des données gouvernementales, telles que les informations sur les infrastructures, les taux d'imposition, et les projets de développement, nous visons à améliorer la précision des prédictions.
 
-Aenean pretium purus augue, ut bibendum erat convallis quis. Cras condimentum quis velit ac mollis. Suspendisse non purus fringilla, venenatis nisl porta, finibus odio. Curabitur aliquet metus faucibus libero interdum euismod. Morbi sed magna nisl. Morbi odio nibh, facilisis vel sapien eu, tempus tincidunt erat. Nullam erat velit, sagittis at purus quis, tristique scelerisque tortor. Pellentesque lacinia tortor id est aliquam viverra. Vestibulum et diam ac ipsum mollis fringilla.
+### Approche
+
+1. **Machine Learning & Deep Learning** : Nous avons utilisé des modèles de régression linéaire et des réseaux de neurones (Deep Learning) pour capter les relations complexes entre les variables influençant les prix immobiliers.
+
+2. **Traitement des données gouvernementales** : Des données collectées auprès des autorités locales (projets d'infrastructure, taux d'imposition, etc.) ont été intégrées au modèle pour fournir un contexte plus complet, ce qui a permis de rendre les prédictions plus fiables.
+
+3. **Optimisation de la performance** : Afin de garantir que notre modèle fonctionne de manière optimale, nous avons utilisé des techniques d'optimisation telles que la validation croisée et l'ajustement des hyperparamètres.
+
+### Résultats et performances
+
+Le modèle développé a atteint une précision de prédiction de 85%. Cette précision a été obtenue grâce à l'intégration de données riches et à l'utilisation de réseaux de neurones qui ont permis de capter les complexités du marché immobilier.
+
+### Conclusion
+
+Ce projet démontre l'importance d'utiliser des techniques avancées de Machine Learning et Deep Learning, ainsi que des données économiques et gouvernementales, pour effectuer des prédictions précises dans le domaine de l'immobilier. Cela ouvre des possibilités pour des applications futures, telles que la régulation du marché immobilier par les autorités locales et les investisseurs souhaitant maximiser leur retour sur investissement.
+
+---

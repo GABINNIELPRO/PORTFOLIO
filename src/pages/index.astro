@@ -30,14 +30,14 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, my name is Gabin Niel"
+					tagline="I am a Data Science and AI student, currently based in Rouen, France."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> IA ingeneer</Pill>
+						<Pill><Icon icon="microphone-stage" size="1.33em" /> Data Science</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" /> skilled communicator</Pill>
 					</div>
 				</Hero>
 
@@ -45,8 +45,9 @@ const projects = (await getCollection('work'))
 					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/photo_profil.png"
 				/>
+				
 			</header>
 
 			<Skills />
@@ -56,7 +57,7 @@ const projects = (await getCollection('work'))
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<p>Take a look below at some of my featured projects made to improve my level.</p>
 				</header>
 
 				<div class="gallery">
@@ -81,17 +82,16 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Skills</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						My Technical Skills for an AI Engineer Role
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							['Handling data with inconsistent, noisy, or missing values (imputation, removal, Label Encoding, One-Hot Encoding, Normalization)', 'Implementation of Machine Learning and Deep Learning models', ' Performance tuning (hyperparameter optimization and performance metrics) ', 'Prediction of returns using advanced regression models', 'Bankruptcy detection in companies (classification)'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
@@ -146,6 +146,7 @@ const projects = (await getCollection('work'))
 			object-fit: cover;
 		}
 	}
+	
 
 	/* ====================================================== */
 
