@@ -38,3 +38,11 @@ Le modèle développé a atteint une précision de prédiction de 85%. Cette pr�
 Ce projet démontre l'importance d'utiliser des techniques avancées de Machine Learning et Deep Learning, ainsi que des données économiques et gouvernementales, pour effectuer des prédictions précises dans le domaine de l'immobilier. Cela ouvre des possibilités pour des applications futures, telles que la régulation du marché immobilier par les autorités locales et les investisseurs souhaitant maximiser leur retour sur investissement.
 
 ---
+
+### Technologies utilisées
+
+- **Scikit-learn** : Pour les modèles de Machine Learning classiques comme la régression linéaire et la régression des forêts aléatoires afin d'analyser les relations entre les caractéristiques des propriétés et les prix.
+- **Tensorflow** : Pour le Deep Learning, permettant de créer des réseaux de neurones complexes capables d'identifier des relations non linéaires dans les données.
+- **Pandas** : Pour la gestion et la manipulation des données économiques et gouvernementales, ainsi que pour le prétraitement des données d'entrée.
+- **NumPy** : Utilisé pour les calculs numériques, y compris les manipulations matricielles nécessaires pour les modèles de Deep Learning.
+- **Matplotlib** : Pour la visualisation des données et l'évaluation des résultats du modèle.
