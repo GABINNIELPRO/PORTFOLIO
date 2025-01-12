@@ -30,3 +30,10 @@ Applying statistical models to these data helps understand the relationships bet
 - Data collection on air quality and CO2 emissions
 - Statistical modeling of data to identify environmental trends
 
+---
+
+### Technologies utilisées
+
+- **Pandas** : Pour la gestion et la manipulation des données économiques et gouvernementales, ainsi que pour le prétraitement des données d'entrée.
+- **NumPy** : Utilisé pour les calculs numériques, y compris les manipulations matricielles nécessaires pour les modèles de Deep Learning.
+- **Matplotlib/Seaborns** : Pour la visualisation des données et l'évaluation des résultats du modèle.
