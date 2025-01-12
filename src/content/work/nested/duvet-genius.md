@@ -9,8 +9,6 @@ tags:
   - NLP
   - Machine Learning
   - Traitement du Langage Naturel
-  - Extraction d'Information
-  - Recherche de Réponses
 ---
 
 ## Introduction au projet
