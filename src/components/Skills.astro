@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Machine Learning & Deep Learning</h2>
+		<p>Using supervised and unsupervised learning algorithms to develop models that can learn and improve from data. Expertise in neural networks, including Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN), for applications such as image recognition and natural language processing.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Programming and Data Engineering</h2>
+		<p>Proficiency in programming languages such as Python, R, and SQL, as well as managing large volumes of data using appropriate tools and frameworks. Designing and optimizing data pipelines for efficient processing of datasets used in training and evaluating AI models.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Modeling and Model Evaluation</h2>
+		<p>Expertise in creating AI models tailored to specific needs, followed by optimization and evaluation using performance metrics such as accuracy, recall, and the ROC curve, ensuring reliable and robust results for production applications.</p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
