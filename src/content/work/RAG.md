@@ -1,7 +1,7 @@
 ---
 title: Retrieval-Augmented Generation (RAG) System
 publishDate: 2025-04-17 00:00:00
-img: /assets/RAG.jpeg
+img: /assets/RAG.jpg
 img_alt: AI-powered document retrieval and text generation system
 description: |
   This project explores the integration of retrieval-augmented generation (RAG) to enhance AI systems' ability to fetch relevant information and generate coherent, contextually accurate text. The system leverages **Python**, **Ollama**, **Azure AI**, **GPT-4**, **Go**, **React**, and **Docker** for improved performance and scalability.

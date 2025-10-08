@@ -20,9 +20,6 @@ import Skills from '../components/Skills.astro';
 const projects = (await getCollection('work'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
 ---
 
 <BaseLayout>
@@ -31,33 +28,65 @@ const projects = (await getCollection('work'))
 			<header class="hero">
 				<Hero
 					title="Hello, my name is Gabin Niel"
-					tagline="I am a Data Science and AI student, currently based in Rouen, France."
+					tagline="Junior Data Engineer — I design efficient data models (star schema, dimensions, fact tables) and build reliable ETL pipelines to turn raw data into clear insights."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> IA ingeneer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Data Science</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> skilled communicator</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Data Engineer</Pill>
+						<Pill><Icon icon="microphone-stage" size="1.33em" /> AI Developer</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" /> Skilled Communicator</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Portrait of Gabin Niel"
 					width="480"
 					height="620"
-					src="/assets/photo_profil.png"
+					src="/assets/photo.png"
 				/>
-				
 			</header>
 
-			<Skills />
+			<!-- If you still want to use the separate <Skills /> component elsewhere, keep the import.
+			     Here we embed the custom Skills section directly below. -->
+
+			<section class="section with-background bg-variant">
+				<header class="section-header stack gap-2 lg:gap-4">
+					<h3>Skills</h3>
+					<p>
+						My Technical Skills for a Data Engineer role
+					</p>
+				</header>
+
+				<div class="gallery">
+					<Grid variant="small">
+						{
+							[
+								'Designing star-schema Data Warehouses (fact & dimension tables), SCD (Type 1/2)',
+								'Building ETL/ELT pipelines with Python (pandas) and PySpark',
+								'Workflow orchestration with Apache Airflow (DAGs, scheduling, retries, alerts)',
+								'PostgreSQL performance tuning (indexes, partitions, EXPLAIN/ANALYZE, materialized views)',
+								'Data quality checks & validation (Great Expectations-style assertions)',
+								'Ingestion & indexing in Elasticsearch for search/RAG use cases',
+								'Versioned transformations (staging → marts) and reproducibility (dbt-like patterns)',
+								'Containerized dev environments with Docker (compose for local stacks)',
+								'Batch & near-real-time ingestion (files/DB extracts; Kafka basics for streams)',
+								'Monitoring & logging (pipeline run history, audits, Grafana/Kibana basics)'
+							].map((item) => (
+								<li class="mention-card">
+									<p>{item}</p>
+								</li>
+							))
+						}
+					</Grid>
+				</div>
+			</section>
 		</div>
 
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured projects made to improve my level.</p>
+					<p>Here are a few featured data engineering projects that I built to level up my skills.</p>
 				</header>
 
 				<div class="gallery">
@@ -77,27 +106,6 @@ const projects = (await getCollection('work'))
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
-				</div>
-			</section>
-
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Skills</h3>
-					<p>
-						My Technical Skills for an AI Engineer Role
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="small">
-						{
-							['Handling data with inconsistent, noisy, or missing values (imputation, removal, Label Encoding, One-Hot Encoding, Normalization)', 'Implementation of Machine Learning and Deep Learning models', ' Performance tuning (hyperparameter optimization and performance metrics) ', 'Prediction of returns using advanced regression models', 'Bankruptcy detection in companies (classification)'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
-						}
-					</Grid>
 				</div>
 			</section>
 		</main>
@@ -146,7 +154,6 @@ const projects = (await getCollection('work'))
 			object-fit: cover;
 		}
 	}
-	
 
 	/* ====================================================== */
 
@@ -198,12 +205,16 @@ const projects = (await getCollection('work'))
 	@media (min-width: 50em) {
 		.section {
 			grid-template-columns: repeat(4, 1fr);
-			grid-template-areas: 'header header header header' 'gallery gallery gallery gallery';
+			grid-template-areas:
+				'header header header header'
+				'gallery gallery gallery gallery';
 			gap: 5rem;
 		}
 
 		.section.with-cta {
-			grid-template-areas: 'header header header cta' 'gallery gallery gallery gallery';
+			grid-template-areas:
+				'header header header cta'
+				'gallery gallery gallery gallery';
 		}
 
 		.section-header {

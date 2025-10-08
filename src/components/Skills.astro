@@ -5,18 +5,26 @@ import Icon from './Icon.astro';
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Machine Learning & Deep Learning</h2>
-		<p>Using supervised and unsupervised learning algorithms to develop models that can learn and improve from data. Expertise in neural networks, including Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN), for applications such as image recognition and natural language processing.</p>
+		<h2>Data Warehouse & Modeling</h2>
+		<p>Conception de schémas <strong>étoile</strong> (facts/dimensions), modélisation sémantique, historisation (SCD), vues analytiques et optimisation SQL (index, partitionnement) pour un reporting fiable et rapide.</p>
 	</div>
+
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Programming and Data Engineering</h2>
-		<p>Proficiency in programming languages such as Python, R, and SQL, as well as managing large volumes of data using appropriate tools and frameworks. Designing and optimizing data pipelines for efficient processing of datasets used in training and evaluating AI models.</p>
+		<h2>ETL & Orchestration</h2>
+		<p>Extraction de sources hétérogènes (CSV/Excel/DB), transformations avec <strong>Python/pandas</strong> ou <strong>PySpark</strong>, chargement vers DWH/Data Lake et <strong>orchestration</strong> des jobs avec Airflow (gestion des dépendances, monitoring, alerting).</p>
 	</div>
+
 	<div class="stack gap-2 lg:gap-4">
 		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Modeling and Model Evaluation</h2>
-		<p>Expertise in creating AI models tailored to specific needs, followed by optimization and evaluation using performance metrics such as accuracy, recall, and the ROC curve, ensuring reliable and robust results for production applications.</p>
+		<h2>RAG & Search</h2>
+		<p>Mise en place de pipelines <strong>RAG</strong> : ingestion de documents, vectorisation (embeddings), indexation <strong>Elasticsearch</strong>, retrieval hybride et génération de réponses contextualisées pour la recherche d’information.</p>
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Big Data & Streaming</h2>
+		<p>Traitements distribués avec <strong>Apache Spark</strong> (batch) et analyses temps réel avec <strong>Kafka / Spark Streaming</strong>, optimisation des jobs (partitioning, caching) et stockage Data Lake (HDFS/S3).</p>
 	</div>
 </section>
 

@@ -4,17 +4,17 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Gabin Niel" description="About Gabin Niel, a DataScience engineering student looking for a 4-6 month internship in AI starting February 2025.">
+<BaseLayout title="About | Gabin Niel" description="About Gabin Niel, a Data Engineering student looking for a 4-6 month internship starting August 2025.">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
 				title="About Me"
-				tagline="Data Science engineering student looking for a 4-6 month internship as an AI Engineer starting in August 2025."
+				tagline="Data Engineering student designing efficient data models (star schema, dimensions, fact tables). Experienced in academic projects centralizing heterogeneous data into a PostgreSQL Data Warehouse, with SQL views and aggregations for clear analysis."
 			>
 				<img
 					width="500"
 					height="500"
-					src="/assets/photo_profil.png"
+					src="/assets/photo.png"
 					alt="Gabin Niel working on a project"
 					style="display: block; margin: 0 auto;"
 				/>
@@ -24,8 +24,8 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">About</h2>
 				<div class="content">
 					<p>
-						Data Scientist student at ESIGELEC an engineering french school, I am looking for a 4-6 month internship as an AI Engineer starting August 2025.
-						I have gained strong skills in data analysis, machine learning, and programming, and I am eager to apply them in a dynamic institution.
+						Data Engineering student at ESIGELEC, a French engineering school,   
+						I have gained strong skills in data pipelines, databases, and programming, and I am eager to apply them in a dynamic institution.
 					</p>
 				</div>
 			</section>
@@ -34,7 +34,7 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Education</h2>
 				<div class="content">
 					<ul>
-						<li><strong>2022 - 2025:</strong> ESIGELEC, Rouen (76000) - Engineering School, Data Science Major</li>
+						<li><strong>2022 - 2025:</strong> ESIGELEC, Rouen (76000) - Engineering School, Data Engineering Major</li>
 						<li><strong>2020 - 2022:</strong> ESIGELEC, Rouen (76000) - Mathematics/Physics Preparatory Class</li>
 					</ul>
 				</div>
@@ -44,11 +44,10 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Technical Skills</h2>
 				<div class="content">
 					<ul>
-						<li>Probabilities, Statistics, Optimization for Data Analysis (ANOVA, ARIMA Time Series, Hypothesis Testing)</li>
-						<li>Machine Learning and Deep Learning: Classification, Regression, Clustering, Neural Networks (Keras, PyTorch, TensorFlow)</li>
-						<li>Programming: Python (pandas, numpy, scikit-learn, TensorFlow, PyTorch), R, SQL, JAVA, C#</li>
-						<li>Blockchain: Smart Contract Development with Solidity</li>
-						<li>Web Technologies: HTML, PHP, CSS</li>
+						<li>Data Engineering: Data pipelines (ETL/ELT), Data Warehousing, Workflow orchestration (Airflow)</li>
+						<li>Databases: SQL (PostgreSQL, MySQL), NoSQL (MongoDB, Elasticsearch)</li>
+						<li>Programming: Python (pandas, numpy, PySpark, FastAPI), R, SQL, JAVA, C#</li>
+						<li>DevOps: Docker, Kubernetes (basics)</li>
 					</ul>
 				</div>
 			</section>
@@ -57,7 +56,7 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Professional Experience</h2>
 				<div class="content">
 					<ul>
-						<li><strong>Intern, SKF (February 2025 - August 2025)</strong> - Contributed to the development of a Retrieval-Augmented Generation (RAG) system to enhance information retrieval and text generation for internal applications</li>
+						<li><strong>Intern, SKF (February 2025 - August 2025)</strong> - Built and optimized a Retrieval-Augmented Generation (RAG) system and data pipelines for internal knowledge management</li>
 						<li><strong>Backend Developer Intern, Leon Grosse (June 2024 - August 2024)</strong> - Developed backend applications in Java with Spring Boot</li>
 						<li><strong>Treasurer, Cultural Association Liberté (2022)</strong> - Managed the association's accounts, prepared budgets, and monitored expenses</li>
 					</ul>
@@ -68,14 +67,10 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Academic Projects</h2>
 				<div class="content">
 					<ul>
-						<ul>
-							<li>Developed a Machine Learning model to predict the likelihood of a company's bankruptcy (TensorFlow, Keras)</li>
-							<li>Developed a Deep Learning model to predict real estate prices (TensorFlow, Keras)</li>
-							<li>Created a Computer Vision model to detect heart diseases from medical images (TensorFlow, OpenCV)</li>
-							<li>Developed a Computer Vision model to diagnose pneumonia from chest X-ray images (TensorFlow, Keras)</li>
-							<li>Worked on a Retrieval-Augmented Generation (RAG) system for improved information retrieval and text generation (TensorFlow, Hugging Face)</li>
-						</ul>
-						
+						<li>Developed an end-to-end data pipeline with FastAPI, PostgreSQL, and Elasticsearch for heterogeneous documents (Excel, CSV, images, text)</li>
+						<li>Implemented an ETL process with Apache Spark for batch data analysis</li>
+						<li>Created a RAG (Retrieval-Augmented Generation) system for enterprise knowledge retrieval</li>
+						<li>Creation of data warehouse</li>
 					</ul>
 				</div>
 			</section>
@@ -84,8 +79,8 @@ import Hero from '../components/Hero.astro';
 				<h2 class="section-title">Certifications</h2>
 				<div class="content">
 					<ul>
-						<li>Supervised Machine Learning: Regression and Classification, Stanford University</li>
-						<li>Certificate for Advanced Learning Algorithms, Stanford University</li>
+						<li>Data Engineering Foundations, Coursera</li>
+						<li>SQL for Data Science, University of California</li>
 						<li>Applied Data Science with Python, Michigan University</li>
 					</ul>
 				</div>
@@ -98,6 +93,7 @@ import Hero from '../components/Hero.astro';
 						<li>Teamwork</li>
 						<li>Communication</li>
 						<li>Problem Solving</li>
+						<li>Adaptability</li>
 					</ul>
 				</div>
 			</section>
