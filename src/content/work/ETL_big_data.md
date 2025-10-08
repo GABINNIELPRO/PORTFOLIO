@@ -12,8 +12,6 @@ tags:
 ---
 ## ETL Pipeline & Project Management System
 
-> "Organizing data is the first step towards smart project management."  
-
 Mary Kay Iteroir, an interior design firm in **Bali**, faced the challenge of managing multiple projects simultaneously: keeping track of project elements (furniture, materials, décor), their prices, invoices, and overall progress. Data was scattered, and project tracking was time-consuming and error-prone.  
 
 To solve this, I developed a **project management system** combined with an **ETL pipeline**, allowing the firm to centralize all project information and simplify daily operations.
