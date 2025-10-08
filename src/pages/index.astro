@@ -61,16 +61,15 @@ const projects = (await getCollection('work'))
 					<Grid variant="small">
 						{
 							[
-								'Designing star-schema Data Warehouses (fact & dimension tables), SCD (Type 1/2)',
-								'Building ETL/ELT pipelines with Python (pandas) and PySpark',
+								'Design star-schema Data Warehouses (fact & dimension tables) and build Bronze, Silver, and Gold layers',
+								'Building ETL/ELT pipelines with Python (pandas)',
 								'Workflow orchestration with Apache Airflow (DAGs, scheduling, retries, alerts)',
-								'PostgreSQL performance tuning (indexes, partitions, EXPLAIN/ANALYZE, materialized views)',
-								'Data quality checks & validation (Great Expectations-style assertions)',
+								'PostgreSQL performance tuning (indexes, partitions, EXPLAIN/ANALYZE)',
 								'Ingestion & indexing in Elasticsearch for search/RAG use cases',
-								'Versioned transformations (staging → marts) and reproducibility (dbt-like patterns)',
 								'Containerized dev environments with Docker (compose for local stacks)',
 								'Batch & near-real-time ingestion (files/DB extracts; Kafka basics for streams)',
-								'Monitoring & logging (pipeline run history, audits, Grafana/Kibana basics)'
+								'Distributed data processing with Apache Spark (batch) and real-time analysis with Kafka/Spark Streaming, storing data in AWS S3'
+								
 							].map((item) => (
 								<li class="mention-card">
 									<p>{item}</p>
