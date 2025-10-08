@@ -1,64 +1,58 @@
 ---
-title: ETL Pipeline & Big Data Analytics
+title: ETL Pipeline & Project Management System
 publishDate: 2025-04-17 00:00:00
 img: /assets/ETL.webp
-img_alt: ETL pipeline with big data ecosystem
+img_alt: Project management and ETL system
 description: |
-  This project focuses on building an ETL pipeline and implementing Big Data analytics using distributed processing frameworks. It centralizes heterogeneous datasets, processes them at scale, and enables advanced business insights.
+  For an interior design firm based in Bali, managing project elements, prices, invoices, and task tracking was becoming increasingly complex. This project involved designing a **project management system** with an ETL pipeline to centralize and organize all project-related data efficiently.
 tags:
  - ETL
- - Big Data
+ - Project Management
  - Data Engineering
 ---
+## ETL Pipeline & Project Management System
 
-## ETL Pipeline & Big Data Analytics
+> "Organizing data is the first step towards smart project management."  
 
-> "Data is the new oil. It’s valuable, but if unrefined it cannot really be used." — Clive Humby  
+Mary Kay Iteroir, an interior design firm in **Bali**, faced the challenge of managing multiple projects simultaneously: keeping track of project elements (furniture, materials, décor), their prices, invoices, and overall progress. Data was scattered, and project tracking was time-consuming and error-prone.  
 
-In this project, we designed and implemented an **ETL pipeline** and a **Big Data analytics solution** to process large volumes of structured and unstructured data, enabling decision-makers to access meaningful insights.
+To solve this, I developed a **project management system** combined with an **ETL pipeline**, allowing the firm to centralize all project information and simplify daily operations.
 
 ### Data Sources
 
-We integrated multiple types of data:
-- **CSV files** (sales, transactions, logs)
-- **JSON data** (web/app usage)
-- **SQL databases** (PostgreSQL, MySQL)
-- **Streaming data** (Kafka events)
+The system consolidated multiple types of data:  
+- **Project elements**: furniture, materials, décor items.  
+- **Pricing information**: costs of each element.  
+- **Invoices**: records of client billing and supplier payments.  
+- **Project tracking**: task status, deadlines, and progress updates.  
 
 ### ETL Pipeline
 
-The pipeline included:
-- **Extract**: Data ingestion from files, databases, and streaming APIs.  
-- **Transform**: Cleaning, normalization, aggregation, and enrichment using **PySpark** and **pandas**.  
-- **Load**: Storage into a **Data Lake (HDFS/S3)** and further structured into a **PostgreSQL Data Warehouse**.  
-
-### Big Data Processing
-
-We leveraged **Apache Spark** for distributed processing to handle large datasets:
-- Batch processing for daily aggregations.  
-- Real-time streaming analytics using **Spark Streaming + Kafka**.  
-- Optimized queries with partitioning and caching.  
+The ETL pipeline enabled structured and efficient data management:  
+- **Extract**: Collected data from spreadsheets, databases, and project management tools.  
+- **Transform**: Cleaned, normalized, and organized data for consistency.  
+- **Load**: Stored in **S3** and structured in a **PostgreSQL database** for easy access and retrieval.
 
 ### Analytics & Visualization
 
-Processed data was used to create **dashboards**:
-- Sales trends and forecasting.  
-- Real-time anomaly detection on streaming logs.  
-- Customer segmentation and retention analysis.  
+The system allowed the firm to:  
+- Track **project elements** and manage inventory.  
+- Monitor **prices and invoices** for each element.  
+- Centralize **projects and task tracking** for a clear overview of progress.  
+- Provide a **structured and easily accessible dashboard** for efficient project management.
 
 #### Results
 
-- **Scalability**: Data pipeline could handle millions of records efficiently.  
-- **Flexibility**: Easy integration of new data sources.  
-- **Insights**: Provided both **batch reports** and **real-time monitoring**.  
+- **Organization**: All project-related data centralized and structured.  
+- **Efficiency**: Easier management of elements, pricing, invoices, and project progress.  
+- **Clarity**: Quick access to essential project information for planning and decision-making.  
 
 ---
 
-### Technologies utilisées
+### Technologies Used
 
-- **Apache Spark (PySpark)** : Traitement distribué des données volumineuses.  
-- **Kafka** : Ingestion de flux temps réel.  
-- **HDFS / S3** : Stockage distribué (Data Lake).  
-- **PostgreSQL** : Couches analytiques structurées (Data Warehouse).  
-- **Airflow** : Orchestration des workflows ETL.  
-- **Power BI / Tableau** : Visualisation des données et création de dashboards.  
+- **Python** : Core logic and ETL implementation.  
+- **PostgreSQL** : Structured database for project data.  
+- **S3** : Data storage for centralizing all project information.  
+- **Airflow** : ETL workflow orchestration.  
+- **React** : Frontend interface for managing projects and tracking elements.  
