@@ -1,59 +1,52 @@
 ---
-title: Data Warehouse for Business Analytics
+title: Data Warehouse for Project Management
 publishDate: 2025-04-17 00:00:00
 img: /assets/DATA.webp
 img_alt: Data warehouse schema with ETL pipelines
 description: |
-  This project focuses on the design and implementation of a Data Warehouse to centralize and analyze heterogeneous business data. It includes ETL processes, database modeling, and dashboard creation for decision-making.
+  For the interior design firm in Bali, after centralizing project data through an ETL pipeline, the next step was to store it in a **PostgreSQL Data Warehouse**. The data was organized in **Bronze, Silver, and Gold layers** and structured with a **star schema**, enabling efficient querying, reporting, and decision-making.
 tags:
  - Data Warehouse
  - ETL
- - Business Intelligence
+ - Project Management
  - SQL
 ---
+## Data Warehouse for Project Management
 
-## Data Warehouse for Business Analytics
+Following the ETL pipeline I developed for **Mary Kay Iteroir**, an interior design firm in **Bali**, the next step was to **store and structure all project data** efficiently in a Data Warehouse. This included **project elements, prices, invoices, and task tracking**, organized for fast access and analytics.
 
-> "Without data, you're just another person with an opinion." — W. Edwards Deming
+### Data Pipeline Layers
 
-In this project, we designed and implemented a **Data Warehouse** to help an organization centralize, clean, and analyze its data for better decision-making.
+To ensure data quality and organization, the warehouse was structured into **three layers**:  
+- **Bronze layer**: Raw data from CSV files, Excel reports, and SQL databases.  
+- **Silver layer**: Cleaned and normalized data, ready for analysis.  
+- **Gold layer**: Aggregated and enriched data for reporting and dashboards.
 
-### Data Sources
+### Star Schema
 
-We integrated heterogeneous datasets such as:
-- **CSV files** (sales, products, customers)
-- **Excel reports** (monthly KPIs)
-- **Relational databases** (PostgreSQL, MySQL)
-
-### ETL/ELT Pipeline
-
-A complete **ETL pipeline** was developed:
-- **Extract**: Retrieve raw data from Excel, CSV, and SQL databases.
-- **Transform**: Data cleaning, normalization, and aggregation using **Python (pandas)** and **SQL scripts**.
-- **Load**: Centralization into a **PostgreSQL Data Warehouse** with a **star schema** (fact and dimension tables).
-
-#### Schema Example
-- **Fact Table**: Sales (date, product_id, customer_id, revenue, quantity)
-- **Dimensions**: Time, Products, Customers, Regions
+The Data Warehouse was designed with a **star schema**:  
+- **Fact Table**: Projects (project_id, element_id, invoice_id, quantity, total_cost)  
+- **Dimensions**: Elements, Clients, Suppliers, Time  
 
 ### Analytics & Visualization
 
-Once the data warehouse was built:
-- Queries were optimized using **SQL indexing and partitioning**.
-- Dashboards were created in **Power BI / Tableau** to visualize KPIs (sales trends, customer segmentation, product performance).
+With the data structured in layers and the star schema:  
+- Queries were optimized with **indexes** for fast retrieval.  
+- Project managers could **track budgets, element usage, and invoices** easily.  
+- The warehouse supported **dashboards and summaries** to monitor all ongoing projects efficiently.
 
 #### Results
 
-- Improved **reporting speed** by centralizing data.
-- Enabled **ad-hoc queries** by business users.
-- Clear visualization of sales performance and customer behavior.
+- **Centralization**: All project data stored in one structured repository.  
+- **Efficiency**: Faster reporting and easier project tracking.  
+- **Clarity**: Clear overview of project status, element costs, and invoices for better decision-making.  
 
 ---
 
-### Technologies utilisées
+### Technologies Used
 
-- **PostgreSQL** : Base de données pour le Data Warehouse.
-- **SQL** : Création des tables, index, vues analytiques.
-- **Python (pandas)** : Prétraitement et transformation des données.
-- **Airflow** (basics) : Orchestration des workflows ETL.
-- **Power BI / Tableau** : Création de dashboards interactifs.
+- **PostgreSQL** : Data Warehouse storage with star schema.  
+- **SQL** : Table creation, indexing, and queries.  
+- **Python (pandas)** : ETL transformation and cleaning.  
+- **Airflow** : ETL orchestration across Bronze, Silver, Gold layers.  
+- **React** : Frontend interface for project and element management.  
