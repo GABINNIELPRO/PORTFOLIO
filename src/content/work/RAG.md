@@ -13,8 +13,6 @@ tags:
 ---
 ## Retrieval-Augmented Generation (RAG) System
 
-> "AI will be the best or worst thing ever for humanity." — Elon Musk
-
 In industrial environments, operators often struggle to quickly access the right documentation while working on complex equipment. At **SKF S2M**, a company specialized in **magnetic bearings**, this challenge was particularly significant for those working in electrical cabinets. Traditional methods of consulting manuals were slow and error-prone.  
 
 To address this, we developed an **intelligent system combining RAG (Retrieval-Augmented Generation), speech recognition, and augmented reality**, creating a seamless and intuitive workflow for operators.
