@@ -10,47 +10,54 @@ tags:
  - Project Management
  - Data Engineering
 ---
-## ETL Pipeline & Project Management System
 
-Mary Kay Iteroir, an interior design firm in **Bali**, faced the challenge of managing multiple projects simultaneously: keeping track of project elements (furniture, materials, décor), their prices, invoices, and overall progress. Data was scattered, and project tracking was time-consuming and error-prone.  
+## 📁 ETL Pipeline & Project Management System
+
+Mary Kay Iteroir, an interior design firm in **Bali**, faced the challenge of managing multiple projects simultaneously: tracking project elements (furniture, materials, décor), their prices, invoices, and progress. Data was scattered, and project monitoring was time-consuming and error-prone.
 
 To solve this, I developed a **project management system** combined with an **ETL pipeline**, allowing the firm to centralize all project information and simplify daily operations.
 
-### Data Sources
+---
+
+### 📦 Data Sources
 
 The system consolidated multiple types of data:  
-- **Project elements**: furniture, materials, décor items.  
-- **Pricing information**: costs of each element.  
-- **Invoices**: records of client billing and supplier payments.  
-- **Project tracking**: task status, deadlines, and progress updates.  
-
-### ETL Pipeline
-
-The ETL pipeline enabled structured and efficient data management:  
-- **Extract**: Collected data from spreadsheets, databases, and project management tools.  
-- **Transform**: Cleaned, normalized, and organized data for consistency.  
-- **Load**: Stored in **S3** and structured in a **PostgreSQL database** for easy access and retrieval.
-
-### Analytics & Visualization
-
-The system allowed the firm to:  
-- Track **project elements** and manage inventory.  
-- Monitor **prices and invoices** for each element.  
-- Centralize **projects and task tracking** for a clear overview of progress.  
-- Provide a **structured and easily accessible dashboard** for efficient project management.
-
-#### Results
-
-- **Organization**: All project-related data centralized and structured.  
-- **Efficiency**: Easier management of elements, pricing, invoices, and project progress.  
-- **Clarity**: Quick access to essential project information for planning and decision-making.  
+- 🛋️ **Project elements**: furniture, materials, décor items  
+- 💰 **Pricing information**: cost per element  
+- 🧾 **Invoices**: client billing & supplier payments  
+- 📅 **Project tracking**: tasks, deadlines, progress status  
 
 ---
 
-### Technologies Used
+### 🔄 ETL Pipeline
 
-- **Python** : Core logic and ETL implementation.  
-- **PostgreSQL** : Structured database for project data.  
-- **S3** : Data storage for centralizing all project information.  
-- **Airflow** : ETL workflow orchestration.  
-- **React** : Frontend interface for managing projects and tracking elements.  
+The ETL pipeline enabled structured and efficient data management:  
+- 📥 **Extract**: Gathered data from spreadsheets, databases, and project tools  
+- 🧹 **Transform**: Cleaned, normalized, and standardized all datasets  
+- 📤 **Load**: Stored in **Amazon S3**, structured in **PostgreSQL** for easy querying  
+
+---
+
+### 📊 Analytics & Visualization
+
+The system allowed the firm to:  
+- 🔎 Track **project elements** and inventory  
+- 💸 Monitor **prices and invoices**  
+- 📋 Centralize **projects and tasks** for clearer progress tracking  
+- 🖥️ Provide an **organized dashboard** for fast decision-making  
+
+#### ⭐ Results
+
+- 🗂️ **Organization**: All project data centralized and structured  
+- ⚡ **Efficiency**: Faster management of elements, prices, invoices, and progress  
+- 🔍 **Clarity**: Immediate access to essential project information  
+
+---
+
+### 🛠️ Technologies Used
+
+- 🐍 **Python** – ETL core logic  
+- 🐘 **PostgreSQL** – Structured project database  
+- ☁️ **Amazon S3** – Centralized raw & processed data storage  
+- 🌬️ **Airflow** – ETL workflow orchestration  
+- ⚛️ **React** – Frontend for managing projects and elements  
